@@ -153,10 +153,10 @@
             <!-- Sidebar Links -->
             <ul class="list-unstyled components">
                     <p>Welcome</p>
-                    <li class="notact">
+                    <li class="active">
                         <a href="<?= base_url('admin/users/index')?>">Home</a>
                     </li>   
-                    <li class="active">
+                    <li>
                         <a href="<?= base_url('admin/users/user')?>">List User</a>
                     </li>
             </ul>
@@ -170,50 +170,26 @@
             </button>
             <div>
                 <div class="container mt-5">
-                    <a href="<?=base_url('admin/users/create')?>" class="btn btn-success mb-2">Create </a>
-                    <h2>List User </h2>
-                    <div class="row mt-3">
-                        <div class="col-sm-12">
-                            <table class="table table-striped" id="listtable">
-                                <thead>
-                                    <tr>
-                                        <th>ID </th>
-                                        <th>Nama </th>
-                                        <th>Email </th>
-                                        <th>Action </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    if($users): 
-                                ?>
-                                    <?php
-                                    foreach($users as $pengguna): 
-                                ?>
-                                    <tr>
-                                        <td><?=$pengguna['id'];?></td>
-                                        <td><?=$pengguna['name'];?></td>
-                                        <td><?=$pengguna['email'];?></td>
-                                        <td>
-                                            <a href="<?=base_url('admin/users/edit/'.$pengguna['id']); ?>"
-                                                class="btn btn-info">
-                                                Edit </a>
-                                        </td>
-                                        <td>
-                                            <a href="<?=base_url('admin/users/delete/'.$pengguna['id']); ?>"
-                                                class="btn btn-danger">Delete </a>
-                                        </td>
-                                    </tr>
-                                    <?php
-                                    endforeach;
-                                ?>
-                                    <?php
-                                    endif;
-                                ?>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    <h2>Home </h2>
+                    <h2>Tugas Tampilan Admin Aviana</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="line"></div>
+
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="line"></div>
+
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="line"></div>
+
+                    <h3>Lorem Ipsum Dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
                 </div>
             </div>
         </div>
