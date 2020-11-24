@@ -20,6 +20,10 @@
                         <input type="text" name="email" class="form-control" id="email" placeholder="Masukin Email">
                     </div>
                     <div class="form-group">
+                        <label for="password">Password </label>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Masukin Password">
+                    </div>
+                    <div class="form-group">
                         <button type="submit" id="send_form" class="btn btn-success"> Submit </button>  
                     </div>
                 </form>

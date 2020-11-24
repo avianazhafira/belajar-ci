@@ -33,6 +33,7 @@ class Users extends BaseController {
         $data = [
             'name'=> $this->request->getVar('name'),
             'email'=> $this->request->getVar('email'),
+            'password'=> password_hash($this->request->getVar('password'),PASSWORD_DEFAULT),
         ];
         $save = $model->insert($data);
 
@@ -53,6 +54,7 @@ class Users extends BaseController {
         $data = [
             'name'=> $this->request->getVar('name'),
             'email'=> $this->request->getVar('email'),
+            
         ];
         $save = $model->update($id, $data);
 
