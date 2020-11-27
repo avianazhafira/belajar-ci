@@ -12,15 +12,6 @@ class Users extends BaseController {
         //load seluruh data
         $data['users']=$model->orderBy('id','DESC')->findAll();
 
-        return view('index', $data);
-    }
-    public function user(){
-        //buat object dari class UsersModel
-        $model= new UsersModel();
-
-        //load seluruh data
-        $data['users']=$model->orderBy('id','DESC')->findAll();
-
         return view('users_view_all', $data);
     }
     public function create()

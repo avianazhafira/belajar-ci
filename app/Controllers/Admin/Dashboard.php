@@ -6,7 +6,7 @@ use App\Models\UsersModel;
 class Dashboard extends BaseController {
     public function index(){
         $session = session();
-        echo "Selamat datang ".$session->get('user_name');
+        return view('dashboard_home');
     }
 }
 

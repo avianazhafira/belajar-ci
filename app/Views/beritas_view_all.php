@@ -31,31 +31,36 @@
         </ul>
     </nav>
     <div class="container mt-5">
-        <a href="<?= base_url('admin/users/create') ?>" class="btn btn-success mb-2">Create</a>
-        <h2> List User </h2>
+        <a href="<?= base_url('admin/beritas/create') ?>" class="btn btn-success mb-2">Create</a>
+        <h2> List Berita </h2>
         <div class="row mt-3">
             <div class="col-sm-12">
-                <table class="table table-striped" id="tabelUser">
+                <table class="table table-striped" id="tabelBerita">
                     <thead>
                         <tr>
-                            <th>ID</td>
-                            <th>Nama</td>
-                            <th>Email</td>
-                            <th>Action</td>
+                            <th>ID Berita</td>
+                            <th>Judul Berita</td>
+                            <th>Author</td>
+                            <th>Tgl Posting</td>
+                            <th>Foto</td>
+                            <th>Isi Berita</td>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php   if($users): 
-                                    foreach($users as $pengguna): ?>
+                        <?php   if($beritas): 
+                                    foreach($beritas as $news): ?>
                                     <tr>
-                                        <td><?= $pengguna['id']; ?></td>
-                                        <td><?= $pengguna['name']; ?></td>
-                                        <td><?= $pengguna['email']; ?></td>
+                                        <td><?= $news['id']; ?></td>
+                                        <td><?= $news['judulberita']; ?></td>
+                                        <td><?= $news['author']; ?></td>
+                                        <td><?= $news['tglposting']; ?></td>
+                                        <td><?= $news['foto']; ?></td>
+                                        <td><?= $news['isiberita']; ?></td>
                                         <td>
-                                        <a href="<?= base_url('admin/users/edit/'.$pengguna['id']); ?>" class="btn btn-success">
+                                        <a href="<?= base_url('admin/beritas/edit/'.$news['id']); ?>" class="btn btn-success">
                                         Edit
                                         </a>
-                                        <a href="<?= base_url('admin/users/delete/'.$pengguna['id']); ?>" class="btn btn-danger">
+                                        <a href="<?= base_url('admin/beritas/delete/'.$news['id']); ?>" class="btn btn-danger">
                                         Delete
                                         </a>
                                         </td>
@@ -73,7 +78,7 @@
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
     <script>
         $(document).ready( function (){
-            $('#tabelUser').DataTable();
+            $('#tabelBerita').DataTable();
         });
     </script>
 </body>
