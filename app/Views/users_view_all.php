@@ -23,7 +23,7 @@
             <a class="nav-link" href="beritas">Master Berita</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="halaman">Master Halaman</a>
+            <a class="nav-link" href="halamans">Master Halaman</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="<?= base_url('admin/login/logout/'); ?>">Logout</a>
