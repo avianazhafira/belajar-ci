@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
-    <title>Document</title>
+    <title>List Berita</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#">Aviana</a>
         
         <!-- Links -->
         <ul class="navbar-nav">

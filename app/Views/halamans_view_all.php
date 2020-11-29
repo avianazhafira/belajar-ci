@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>List Halaman</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#">Aviana</a>
         
         <!-- Links -->
         <ul class="navbar-nav">
